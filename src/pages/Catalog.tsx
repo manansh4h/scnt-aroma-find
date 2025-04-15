@@ -10,6 +10,7 @@ const perfumes = [
     id: 1,
     name: "Ocean Breeze",
     price: 89.99,
+    brand: "SCNT",
     type: "Aquatic",
     concentration: "EDP",
     image: "https://images.unsplash.com/photo-1595426496137-5bcb11ea3f51?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -19,6 +20,7 @@ const perfumes = [
     id: 2,
     name: "Floral Embrace",
     price: 75.50,
+    brand: "SCNT",
     type: "Floral",
     concentration: "EDT",
     image: "https://images.unsplash.com/photo-1615219434998-3abb548b4a10?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -28,6 +30,7 @@ const perfumes = [
     id: 3,
     name: "Amber Wood",
     price: 120.00,
+    brand: "SCNT",
     type: "Woody",
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1590736969955-71a6ceb9344e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -37,6 +40,7 @@ const perfumes = [
     id: 4,
     name: "Citrus Burst",
     price: 65.00,
+    brand: "SCNT",
     type: "Fresh",
     concentration: "EDT",
     image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -46,6 +50,7 @@ const perfumes = [
     id: 5,
     name: "Velvet Rose",
     price: 110.00,
+    brand: "SCNT",
     type: "Floral",
     concentration: "EDP",
     image: "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -55,6 +60,7 @@ const perfumes = [
     id: 6,
     name: "Oriental Nights",
     price: 130.00,
+    brand: "SCNT",
     type: "Oriental",
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1612476957058-3326d0a4a47b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -64,6 +70,7 @@ const perfumes = [
     id: 7,
     name: "Desert Rose",
     price: 95.00,
+    brand: "SCNT",
     type: "Floral",
     concentration: "EDP",
     image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -73,6 +80,7 @@ const perfumes = [
     id: 8,
     name: "Citrus Noir",
     price: 110.50,
+    brand: "SCNT",
     type: "Fresh",
     concentration: "EDT",
     image: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -82,6 +90,7 @@ const perfumes = [
     id: 9,
     name: "Winter Spice",
     price: 135.00,
+    brand: "SCNT",
     type: "Oriental",
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1550342634-25a0d728ee16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -89,49 +98,119 @@ const perfumes = [
   },
   {
     id: 10,
-    name: "Davidoff Cool Water",
+    name: "Cool Water",
     brand: "Davidoff",
     price: 65.99,
     type: "Aquatic",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    image: "https://images.unsplash.com/photo-1575377569702-32637d6a0eff?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "A classic aquatic fragrance with marine and woody notes."
   },
   {
     id: 11,
-    name: "Boss Bottled Intense",
+    name: "Bottled Intense",
     brand: "Boss",
     price: 79.50,
     type: "Woody",
     concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "A sophisticated woody fragrance with warm and spicy undertones."
   },
   {
     id: 12,
-    name: "Davidoff Champion",
+    name: "Champion",
     brand: "Davidoff",
     price: 72.00,
     type: "Fresh",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "An energetic and sporty fragrance for the modern man."
   },
   {
     id: 13,
-    name: "Boss The Scent",
+    name: "The Scent",
     brand: "Boss",
     price: 85.50,
     type: "Oriental",
     concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "A seductive oriental fragrance with leather and spice notes."
+  },
+  {
+    id: 14,
+    name: "Sauvage",
+    brand: "Dior",
+    price: 120.00,
+    type: "Aromatic",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Raw and noble, with fresh top notes and a woody trail."
+  },
+  {
+    id: 15,
+    name: "Bleu de Chanel",
+    brand: "Chanel",
+    price: 135.00,
+    type: "Woody Aromatic",
+    concentration: "Parfum",
+    image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A woody aromatic fragrance for men who demand the very best."
+  },
+  {
+    id: 16,
+    name: "La Vie Est Belle",
+    brand: "Lancôme",
+    price: 95.00,
+    type: "Floral Fruity Gourmand",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A fragrance that brings out the natural elegance of women."
+  },
+  {
+    id: 17,
+    name: "Light Blue",
+    brand: "Dolce & Gabbana",
+    price: 89.00,
+    type: "Citrus Aromatic",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1608528577891-eb055944f2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Captures the sensual Mediterranean lifestyle with Sicilian citrus."
+  },
+  {
+    id: 18,
+    name: "Acqua di Giò",
+    brand: "Giorgio Armani",
+    price: 100.00,
+    type: "Aquatic",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1618329340733-ab4554d28b15?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Inspired by the Mediterranean sea, fresh and masculine."
+  },
+  {
+    id: 19,
+    name: "Black Orchid",
+    brand: "Tom Ford",
+    price: 150.00,
+    type: "Oriental Floral",
+    concentration: "Parfum",
+    image: "https://images.unsplash.com/photo-1531751029405-891804eeefa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A luxurious and sensual fragrance with rich dark accords."
+  },
+  {
+    id: 20,
+    name: "J'adore",
+    brand: "Dior",
+    price: 115.00,
+    type: "Floral",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A modern, glamorous fragrance with floral notes."
   }
 ];
 
-const brands = ["SCNT", "Davidoff", "Boss"];
+const brands = ["SCNT", "Davidoff", "Boss", "Dior", "Chanel", "Lancôme", "Dolce & Gabbana", "Giorgio Armani", "Tom Ford"];
 const concentrations = ["EDT", "EDP", "Parfum"];
-const types = ["Aquatic", "Floral", "Woody", "Fresh", "Oriental"];
+const types = ["Aquatic", "Floral", "Woody", "Fresh", "Oriental", "Aromatic", "Citrus Aromatic", "Oriental Floral", "Woody Aromatic", "Floral Fruity Gourmand"];
 
 const Catalog = () => {
   const [priceRange, setPriceRange] = useState({ min: 0, max: 200 });

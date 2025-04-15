@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,6 +9,7 @@ const featuredPerfumes = [
     id: 1,
     name: "Ocean Breeze",
     price: 89.99,
+    brand: "SCNT",
     type: "Aquatic",
     concentration: "EDP",
     image: "https://images.unsplash.com/photo-1595426496137-5bcb11ea3f51?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -17,6 +19,7 @@ const featuredPerfumes = [
     id: 2,
     name: "Floral Embrace",
     price: 75.50,
+    brand: "SCNT",
     type: "Floral",
     concentration: "EDT",
     image: "https://images.unsplash.com/photo-1615219434998-3abb548b4a10?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -26,57 +29,61 @@ const featuredPerfumes = [
     id: 3,
     name: "Amber Wood",
     price: 120.00,
+    brand: "SCNT",
     type: "Woody",
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1590736969955-71a6ceb9344e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Rich and warm with notes of amber, sandalwood, and vanilla."
   },
   {
-    id: 4,
-    name: "Desert Rose",
-    price: 95.00,
-    type: "Floral",
-    concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-    description: "Luxurious blend of desert rose, saffron, and leather."
-  },
-  {
-    id: 5,
-    name: "Citrus Noir",
-    price: 110.50,
-    type: "Fresh",
-    concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-    description: "Dark citrus with hints of black pepper and bergamot."
-  },
-  {
-    id: 6,
-    name: "Winter Spice",
+    id: 15,
+    name: "Bleu de Chanel",
+    brand: "Chanel",
     price: 135.00,
-    type: "Oriental",
+    type: "Woody Aromatic",
     concentration: "Parfum",
-    image: "https://images.unsplash.com/photo-1550342634-25a0d728ee16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-    description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
+    image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A woody aromatic fragrance for men who demand the very best."
   },
   {
-    id: 7,
-    name: "Davidoff Cool Water",
+    id: 16,
+    name: "La Vie Est Belle",
+    brand: "Lancôme",
+    price: 95.00,
+    type: "Floral Fruity Gourmand",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A fragrance that brings out the natural elegance of women."
+  },
+  {
+    id: 19,
+    name: "Black Orchid",
+    brand: "Tom Ford",
+    price: 150.00,
+    type: "Oriental Floral",
+    concentration: "Parfum",
+    image: "https://images.unsplash.com/photo-1531751029405-891804eeefa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "A luxurious and sensual fragrance with rich dark accords."
+  },
+  {
+    id: 10,
+    name: "Cool Water",
     brand: "Davidoff",
     price: 65.99,
     type: "Aquatic",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    image: "https://images.unsplash.com/photo-1575377569702-32637d6a0eff?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "A classic aquatic fragrance with marine and woody notes."
   },
   {
-    id: 8,
-    name: "Boss Bottled Intense",
-    brand: "Boss",
-    price: 79.50,
-    type: "Woody",
-    concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-    description: "A sophisticated woody fragrance with warm and spicy undertones."
+    id: 18,
+    name: "Acqua di Giò",
+    brand: "Giorgio Armani",
+    price: 100.00,
+    type: "Aquatic",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1618329340733-ab4554d28b15?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Inspired by the Mediterranean sea, fresh and masculine."
   }
 ];
 
