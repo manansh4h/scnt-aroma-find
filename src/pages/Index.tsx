@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
-// Mock data for featured perfumes
+// Expanded perfume collection with more diverse options
 const featuredPerfumes = [
   {
     id: 1,
@@ -32,6 +32,33 @@ const featuredPerfumes = [
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1557673834-5d66d3f22fad?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Rich and warm with notes of amber, sandalwood, and vanilla."
+  },
+  {
+    id: 4,
+    name: "Desert Rose",
+    price: 95.00,
+    type: "Floral",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1618214436262-0204f27bd9c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Luxurious blend of desert rose, saffron, and leather."
+  },
+  {
+    id: 5,
+    name: "Citrus Noir",
+    price: 110.50,
+    type: "Fresh",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1595350807958-7aaee15c8c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Dark citrus with hints of black pepper and bergamot."
+  },
+  {
+    id: 6,
+    name: "Winter Spice",
+    price: 135.00,
+    type: "Oriental",
+    concentration: "Parfum",
+    image: "https://images.unsplash.com/photo-1615485937809-c8962a9b6e3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
   }
 ];
 

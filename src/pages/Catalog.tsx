@@ -6,7 +6,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-// Mock data for perfumes
+// Expanded perfume collection with more diverse options
 const perfumes = [
   {
     id: 1,
@@ -61,9 +61,37 @@ const perfumes = [
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Exotic blend of spices, amber, and vanilla."
+  },
+  {
+    id: 7,
+    name: "Desert Rose",
+    price: 95.00,
+    type: "Floral",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1618214436262-0204f27bd9c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Luxurious blend of desert rose, saffron, and leather."
+  },
+  {
+    id: 8,
+    name: "Citrus Noir",
+    price: 110.50,
+    type: "Fresh",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1595350807958-7aaee15c8c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Dark citrus with hints of black pepper and bergamot."
+  },
+  {
+    id: 9,
+    name: "Winter Spice",
+    price: 135.00,
+    type: "Oriental",
+    concentration: "Parfum",
+    image: "https://images.unsplash.com/photo-1615485937809-c8962a9b6e3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
   }
 ];
 
+// Update concentrations and types to match new perfumes
 const concentrations = ["EDT", "EDP", "Parfum"];
 const types = ["Aquatic", "Floral", "Woody", "Fresh", "Oriental"];
 
