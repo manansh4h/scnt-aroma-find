@@ -14,7 +14,7 @@ const perfumes = [
     price: 89.99,
     type: "Aquatic",
     concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1595426496137-5bcb11ea3f51?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Fresh and invigorating scent with notes of sea salt and citrus."
   },
   {
@@ -23,7 +23,7 @@ const perfumes = [
     price: 75.50,
     type: "Floral",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1615219434998-3abb548b4a10?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Elegant bouquet of rose, jasmine, and lily of the valley."
   },
   {
@@ -32,7 +32,7 @@ const perfumes = [
     price: 120.00,
     type: "Woody",
     concentration: "Parfum",
-    image: "https://images.unsplash.com/photo-1557673834-5d66d3f22fad?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1590736969955-71a6ceb9344e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Rich and warm with notes of amber, sandalwood, and vanilla."
   },
   {
@@ -41,7 +41,7 @@ const perfumes = [
     price: 65.00,
     type: "Fresh",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Vibrant blend of lemon, bergamot, and grapefruit."
   },
   {
@@ -50,7 +50,7 @@ const perfumes = [
     price: 110.00,
     type: "Floral",
     concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1594221708779-94832f4320ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Luxurious rose fragrance with hints of peony and musk."
   },
   {
@@ -59,7 +59,7 @@ const perfumes = [
     price: 130.00,
     type: "Oriental",
     concentration: "Parfum",
-    image: "https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1612476957058-3326d0a4a47b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Exotic blend of spices, amber, and vanilla."
   },
   {
@@ -68,7 +68,7 @@ const perfumes = [
     price: 95.00,
     type: "Floral",
     concentration: "EDP",
-    image: "https://images.unsplash.com/photo-1618214436262-0204f27bd9c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Luxurious blend of desert rose, saffron, and leather."
   },
   {
@@ -77,7 +77,7 @@ const perfumes = [
     price: 110.50,
     type: "Fresh",
     concentration: "EDT",
-    image: "https://images.unsplash.com/photo-1595350807958-7aaee15c8c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Dark citrus with hints of black pepper and bergamot."
   },
   {
@@ -86,7 +86,7 @@ const perfumes = [
     price: 135.00,
     type: "Oriental",
     concentration: "Parfum",
-    image: "https://images.unsplash.com/photo-1615485937809-c8962a9b6e3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+    image: "https://images.unsplash.com/photo-1550342634-25a0d728ee16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
   }
 ];
