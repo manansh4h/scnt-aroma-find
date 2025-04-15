@@ -1,10 +1,8 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
-// Expanded perfume collection with more diverse options
 const featuredPerfumes = [
   {
     id: 1,
@@ -59,6 +57,26 @@ const featuredPerfumes = [
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1550342634-25a0d728ee16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
+  },
+  {
+    id: 7,
+    name: "Davidoff Cool Water",
+    brand: "Davidoff",
+    price: 65.99,
+    type: "Aquatic",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    description: "A classic aquatic fragrance with marine and woody notes."
+  },
+  {
+    id: 8,
+    name: "Boss Bottled Intense",
+    brand: "Boss",
+    price: 79.50,
+    type: "Woody",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    description: "A sophisticated woody fragrance with warm and spicy undertones."
   }
 ];
 

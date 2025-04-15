@@ -1,6 +1,7 @@
 
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,13 +30,11 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Quick Links</h3>
+            <h3 className="text-lg font-medium mb-4">Our Brands</h3>
             <ul className="space-y-3">
-              <li><a href="/catalog" className="text-gray-600 hover:text-gray-900">Shop All</a></li>
-              <li><a href="/catalog" className="text-gray-600 hover:text-gray-900">New Arrivals</a></li>
-              <li><a href="/catalog" className="text-gray-600 hover:text-gray-900">Best Sellers</a></li>
-              <li><a href="/about" className="text-gray-600 hover:text-gray-900">About Us</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Contact Us</a></li>
+              <li><Link to="/catalog" className="text-gray-600 hover:text-gray-900">SCNT</Link></li>
+              <li><Link to="/catalog" className="text-gray-600 hover:text-gray-900">Davidoff</Link></li>
+              <li><Link to="/catalog" className="text-gray-600 hover:text-gray-900">Boss</Link></li>
             </ul>
           </div>
         </div>

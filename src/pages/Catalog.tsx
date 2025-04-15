@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +5,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-// Expanded perfume collection with more diverse options
 const perfumes = [
   {
     id: 1,
@@ -88,16 +86,57 @@ const perfumes = [
     concentration: "Parfum",
     image: "https://images.unsplash.com/photo-1550342634-25a0d728ee16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
     description: "Warm and spicy with notes of cinnamon, clove, and nutmeg."
+  },
+  {
+    id: 10,
+    name: "Davidoff Cool Water",
+    brand: "Davidoff",
+    price: 65.99,
+    type: "Aquatic",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    description: "A classic aquatic fragrance with marine and woody notes."
+  },
+  {
+    id: 11,
+    name: "Boss Bottled Intense",
+    brand: "Boss",
+    price: 79.50,
+    type: "Woody",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    description: "A sophisticated woody fragrance with warm and spicy undertones."
+  },
+  {
+    id: 12,
+    name: "Davidoff Champion",
+    brand: "Davidoff",
+    price: 72.00,
+    type: "Fresh",
+    concentration: "EDT",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    description: "An energetic and sporty fragrance for the modern man."
+  },
+  {
+    id: 13,
+    name: "Boss The Scent",
+    brand: "Boss",
+    price: 85.50,
+    type: "Oriental",
+    concentration: "EDP",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    description: "A seductive oriental fragrance with leather and spice notes."
   }
 ];
 
-// Update concentrations and types to match new perfumes
+const brands = ["SCNT", "Davidoff", "Boss"];
 const concentrations = ["EDT", "EDP", "Parfum"];
 const types = ["Aquatic", "Floral", "Woody", "Fresh", "Oriental"];
 
 const Catalog = () => {
   const [priceRange, setPriceRange] = useState({ min: 0, max: 200 });
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedConcentrations, setSelectedConcentrations] = useState<string[]>([]);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
@@ -117,13 +156,21 @@ const Catalog = () => {
     );
   };
 
-  // Filter perfumes based on selected filters
+  const handleBrandChange = (brand: string) => {
+    setSelectedBrands(prev => 
+      prev.includes(brand) 
+        ? prev.filter(b => b !== brand) 
+        : [...prev, brand]
+    );
+  };
+
   const filteredPerfumes = perfumes.filter(perfume => {
     const matchesType = selectedTypes.length === 0 || selectedTypes.includes(perfume.type);
     const matchesConcentration = selectedConcentrations.length === 0 || selectedConcentrations.includes(perfume.concentration);
+    const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(perfume.brand);
     const matchesPrice = perfume.price >= priceRange.min && perfume.price <= priceRange.max;
     
-    return matchesType && matchesConcentration && matchesPrice;
+    return matchesType && matchesConcentration && matchesPrice && matchesBrand;
   });
 
   return (
@@ -132,12 +179,10 @@ const Catalog = () => {
         <h1 className="text-3xl font-light mb-12 text-center">Our Collection</h1>
         
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Filters sidebar */}
           <div className="w-full md:w-64 shrink-0">
             <div className="sticky top-4 bg-white p-6 border rounded-lg">
               <h2 className="text-xl font-medium mb-6">Filters</h2>
               
-              {/* Price Range */}
               <div className="mb-6">
                 <h3 className="text-lg mb-4">Price Range</h3>
                 <div className="flex items-center gap-2 mb-2">
@@ -161,7 +206,6 @@ const Catalog = () => {
                 </div>
               </div>
               
-              {/* Perfume Type */}
               <div className="mb-6">
                 <h3 className="text-lg mb-4">Scent Type</h3>
                 <div className="space-y-2">
@@ -178,7 +222,6 @@ const Catalog = () => {
                 </div>
               </div>
               
-              {/* Concentration */}
               <div className="mb-6">
                 <h3 className="text-lg mb-4">Concentration</h3>
                 <div className="space-y-2">
@@ -195,9 +238,26 @@ const Catalog = () => {
                 </div>
               </div>
               
+              <div className="mb-6">
+                <h3 className="text-lg mb-4">Brands</h3>
+                <div className="space-y-2">
+                  {brands.map(brand => (
+                    <div key={brand} className="flex items-center space-x-2">
+                      <Checkbox 
+                        id={`brand-${brand}`} 
+                        checked={selectedBrands.includes(brand)}
+                        onCheckedChange={() => handleBrandChange(brand)}
+                      />
+                      <Label htmlFor={`brand-${brand}`}>{brand}</Label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
               <Button variant="outline" className="w-full" onClick={() => {
                 setSelectedTypes([]);
                 setSelectedConcentrations([]);
+                setSelectedBrands([]);
                 setPriceRange({ min: 0, max: 200 });
               }}>
                 Reset Filters
@@ -205,7 +265,6 @@ const Catalog = () => {
             </div>
           </div>
           
-          {/* Product grid */}
           <div className="flex-1">
             {filteredPerfumes.length === 0 ? (
               <div className="text-center py-12">
